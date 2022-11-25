@@ -18,8 +18,8 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
-            <a href="#" class="navbar-brand">
+        <div class=" container container-nav">
+            <a href="./index.html" class="navbar-brand">
             <strong class="h3">LLR</strong> Boys' Hostel</a>
             
         <div class="collapse navbar-collapse" id="navmenu">
@@ -42,7 +42,7 @@
       <div class="wrapper">
           <ul>
               <li><a href="./index.html">Home</a></li>
-              <li><a href="#">About</a></li>
+              
   <li><a href="./mess.html">Mess</a></li>
   <li><a href="./Gallery.html">Gallery</a></li>
   <li><a href="./contact.html">Contact US</a></li>
@@ -54,8 +54,8 @@
 
     </div> -->
         
-    <div class="seven text-light">
-        <h1>Diet Plan of Mess</h1>
+    <div class="seven text-light m-3">
+        <h1 style="color: black;">Diet Plan of Mess</h1>
       </div>
 
     <div class="container">
@@ -139,13 +139,28 @@
 </div>
 <br>
 
-<section>
-    <div class="card m-4 " style="max-height:10rem;">
-        <div class="card-header text-white">
-          Notice
-        </div>
-        <ol class="overflow-auto" > 
+<section class="search-student">
 
+    <h1 style="color:white ;">Search Mess Bill By Name</h1>
+        <form class="search-container" action="">
+          <input id="search-box" type="text" class="search-box" name="q" />
+          <label for="search-box"><i class="fa-solid fa-magnifying-glass search-icon"></i></label>
+          <input type="submit" id="search-submit" />
+        </form>
+  </section>
+  <div class="container">
+    <div id="studentDetails"></div>
+  </div>
+<section class="container">
+    <div class="row">
+            <div class="col-6">
+
+                <div class="card m-4 " style="max-height:10rem;">
+                    <div class="card-header text-white">
+                        Notice
+                    </div>
+        <ol class="overflow-auto" > 
+            
             <a href="./images/mess1.jpg" class="messbill">Mess Bill of November</a> <br>
             <a href="./images/mess2.jpg" class="messbill">Mess Bill of October</a> <br>
             <a href="./images/mess3.jpg" class="messbill">Mess Bill of September</a> <br>
@@ -155,24 +170,30 @@
             <a href="./images/mess1.jpg" class="messbill">Mess Bill of May</a> <br>
             <a href="./images/mess2.jpg" class="messbill">Mess Bill of April</a> 
         </ol>
-      </div>
-      <div class="card m-4 " style="max-height:10rem;">
-        <div class="card-header  text-white">
-          Mess Rules
-        </div>
-        <ol class="overflow-auto" id="rules"></ol>
-      </div>
     </div>
+    </div>
+    <div class="col-6">
+
+        <div class="card m-4 " style="max-height:10rem;">
+            <div class="card-header  text-white">
+                Mess Rules
+            </div>
+            <ol class="overflow-auto" id="rules"></ol>
+        </div>
+    </div>
+</div>
+</div>
 </section>
 
 
-<footer class="footer text-center bg-dark py-3 bg-light">
+<footer class="footer text-center bg-dark py-3 bg-light fixed-bottom">
     <div class="container">
         <span class="text-muted">©copyright 2022 || All Rights Reserved</span>
     </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./messScript.js"></script>
+    <script src="https://kit.fontawesome.com/7d47e7aafc.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
